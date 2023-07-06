@@ -8,4 +8,12 @@ class Triangle {
     get perimeter() {
         return this.segmentAB.length + this.segmentBC.length + this.segmentCA.length;
     }
+
+    get Area() {
+
+    }
+
+    isRectangle() {
+        
+    }
 }
