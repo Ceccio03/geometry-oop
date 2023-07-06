@@ -9,11 +9,22 @@ class Triangle {
         return this.segmentAB.length + this.segmentBC.length + this.segmentCA.length;
     }
 
-    get Area() {
+    get area() {
+        const semiPerimeter = (this.segmentAB.length + this.segmentBC.length + this.segmentCA.length) / 2;
+        const area = Math.sqrt(semiPerimeter * (semiPerimeter - this.segmentAB.length) * (semiPerimeter - this.segmentBC.length) * (semiPerimeter - this.segmentCA.length));
 
+        return area
     }
 
-    isRectangle() {
-        
+    get isRectangle() {
+        if (this.segmentAB.length ** 2 === (this.segmentBC.length ** 2 + this.segmentCA.length ** 2)) {
+            return true;
+        } else if (this.segmentBC.length ** 2 === (this.segmentAB.length ** 2 + this.segmentCA.length ** 2)) {
+            return true;
+        } else if (this.segmentCA.length ** 2 === (this.segmentAB.length ** 2 + this.segmentBC.length ** 2)) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
