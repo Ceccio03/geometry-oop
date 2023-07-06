@@ -4,7 +4,7 @@ class Segment {
         this.pointB = new Point(xB, yB);
     }
 
-    getLength() {
+    get length() {
         const deltaX = this.pointA.x - this.pointB.x;
         const deltaY = this.pointA.y - this.pointB.y;
         const length = Math.sqrt(deltaX ** 2 + deltaY ** 2);
