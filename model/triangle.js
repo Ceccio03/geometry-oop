@@ -10,7 +10,7 @@ class Triangle {
     }
 
     get area() {
-        const semiPerimeter = (this.segmentAB.length + this.segmentBC.length + this.segmentCA.length) / 2;
+        const semiPerimeter = this.perimeter / 2;
         const area = Math.sqrt(semiPerimeter * (semiPerimeter - this.segmentAB.length) * (semiPerimeter - this.segmentBC.length) * (semiPerimeter - this.segmentCA.length));
 
         return area
