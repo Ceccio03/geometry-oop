@@ -16,7 +16,7 @@ class Triangle {
         return area
     }
 
-    get isRectangle() {
+    isRectangle() {
         if (this.segmentAB.length ** 2 === (this.segmentBC.length ** 2 + this.segmentCA.length ** 2)) {
             return true;
         } else if (this.segmentBC.length ** 2 === (this.segmentAB.length ** 2 + this.segmentCA.length ** 2)) {

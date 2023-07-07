@@ -13,7 +13,7 @@ const triangle1 = new Triangle(1, 1, 4, 5, 4, 1);
 console.log(triangle1);
 console.log(triangle1.perimeter);
 console.log(triangle1.area);
-console.log(triangle1.isRectangle);
+console.log(triangle1.isRectangle());
 
 const client1 = new Client('pippo', 'de pippis', 'via pippolis 27');
 
